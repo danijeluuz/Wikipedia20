@@ -2,14 +2,15 @@
 
 body {
     background-color: black ;
-    overflow: hidden;
     margin: 0px;
+    overflow: hidden;
 }
 
 .griglia {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1em;
+    margin: 2vw 2vw;
 }
 
 .filetto{
@@ -18,24 +19,38 @@ body {
     margin-right: 0px; 
 }
 
-.home{
-    grid-column: span 3;
-    border-right: 1px solid white;
-    text-align: center;
-    height: calc(100vh - 6vw - 1em - 6px);
-    transition: background-color 0.15s linear;
-    text-decoration:none;
-    color: white;
-    margin-left: -1vw;
-    top: 50%;
-    position: relative;
-    
-}
-.home:hover{
-    background-color: #ccff00;
-    color: black;
+a{
+    text-decoration: none; 
+   color:white;
+
 }
 
+a:hover{
+    color: #ccff00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bottone1{
+    background-color: black;
+}
+
+.bottone1:hover{
+    background-color: #ccff00;
+}
+
+.bottone2{
+    background-color: black;
+}
+
+.bottone2:hover{
+    background-color: #EF02F5;
+}
+
+
+/* 
+
+ */
 
 .cella {
   /*   outline: 1px red solid; */
@@ -43,9 +58,7 @@ body {
     color: white;    
 }
 
-.cella img {
-    width:100%;
-}
+
 
 .singola{
     grid-column: span 1;
@@ -67,6 +80,10 @@ body {
 
 .nonupla {
     grid-column: span 9;
+}
+
+.decima {
+    grid-column: span 10;
 }
 
 .tutta {
@@ -97,20 +114,31 @@ body {
     padding: 0px;
     font-size: 5vw;
     font-weight: 400;
-    margin-left: 1vw;
-    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-top: 1.5vw;
+    /*margin: 0;*/
+}
+
+.articoli {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 5vw;
+    font-weight: 400;
+    margin-top: 1.5vw;
+    color: white;
     /*margin: 0;*/
 }
 
 p {
     margin: 0px;
     padding: 0px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     line-height: 1.25;
-    margin-right: 1vw;
-    margin-top: 1vw;
+    margin-right: 2vw;
     margin-bottom: 0px;
+    margin-top: 2.33vw;
     /*margin: 0;*/
 
 }
@@ -126,7 +154,22 @@ hr{
 
 }
 
-a{
-    margin:0px;
-    padding: 0px;
+button{
+    background-color: black;
+    border-radius: 50%;
+    border-color: white;
+    text-decoration: none;
+    border-style: solid;
+    text-shadow: none;
+    text-align: center;
+}
+
+.footer{
+    position: absolute;
+    top: 85vh;
+}
+
+img{
+    width: 4vw;
+
 }

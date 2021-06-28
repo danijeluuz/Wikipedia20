@@ -1,3 +1,158 @@
+var turns = 0;
+
+function articoli() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art1").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art1").style.color = 'white';
+    }
+}
+
+function articoli2() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art2").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art2").style.color = 'white';
+    }
+}
+
+function articoli3() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art3").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art3").style.color = 'white';
+    }
+}
+
+
+function articoli4() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art4").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art4").style.color = 'white';
+    }
+}
+
+
+function articoli5() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art5").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art5").style.color = 'white';
+    }
+}
+
+
+function articoli6() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art6").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art6").style.color = 'white';
+    }
+}
+
+
+function articoli7() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art7").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art7").style.color = 'white';
+    }
+}
+
+
+function articoli8() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art8").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art8").style.color = 'white';
+    }
+}
+
+
+function articoli9() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art9").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art9").style.color = 'white';
+    }
+}
+
+
+function articoli10() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art10").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art10").style.color = 'white';
+    }
+}
+
+
+function articoli11() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art11").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art11").style.color = 'white';
+    }
+}
+
+
+function articoli12() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art12").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art12").style.color = 'white';
+    }
+}
+
+
+function articoli13() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art13").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art13").style.color = 'white';
+    }
+}
+
+
+function articoli14() {
+    if (turns === 0) {
+        turns++;
+        document.getElementById("art14").style.color = '#EF02F5';
+     } else if (turns === 1) {
+        turns--;
+        document.getElementById("art14").style.color = 'white';
+    }
+}
+
+
+
 
 am4core.ready(function() {
 
@@ -20,13 +175,13 @@ var temperatures = {
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
         ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17],
         ["★ Star Trek", 168, 302, 178, 152, 131, 75, 60, 116, 52, 71, 52, 117, 106, 42, 30, 51], 
-        ["Leonardo Dicaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315],
+        ["Leonardo DiCaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315],
         ["Amatrice", 14, 36, 56, 28, 72, 67, 69, 39, 38, 16, 52, 183, 111, 65, 63, 26],
         ["Barack Obama", 0, 48, 114, 505, 565, 167, 235, 266, 231, 233, 393, 419, 208, 248, 44, 37],
         ["★ Cetacei", 38, 18, 41, 247, 36, 20, 39, 20, 19, 25, 16, 20, 11, 15, 41, 17],
         ["Rugby", 66, 169, 336, 95, 87, 81, 158, 84, 74, 45, 71, 63, 33, 37, 34, 45],
         ["Quarantena", 0, 0, 14, 6, 6, 9, 5, 2, 9, 6, 7, 4, 0, 3, 2, 87],
-        ["★ Glicosi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5],
+        ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5],
         ["Nepal", 56, 88, 119, 115, 109, 48, 42, 46, 37, 26, 102, 18, 29, 52, 53, 62],
         ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88], 
       
@@ -132,7 +287,7 @@ series.dataFields.categoryX = "country";
 series.tooltipText = "{categoryX}:{valueY.value}";
 
 // this makes columns to be of a different color, depending on value
-series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#C7B0F5"), max: am4core.color("#3F1791"), dataField: "valueY" });
+series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#C7B0F5"), max: am4core.color("#EF02F5"), dataField: "valueY" });
 
 // cursor
 var cursor = new am4charts.RadarCursor();
