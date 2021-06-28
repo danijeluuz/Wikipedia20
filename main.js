@@ -120,7 +120,7 @@ var valueAxisRenderer = valueAxis.renderer;
 valueAxisRenderer.axisFills.template.disabled = true;
 valueAxisRenderer.ticks.template.disabled = true;
 valueAxisRenderer.minGridDistance = 24;
-valueAxisRenderer.grid.template.strokeOpacity = 0.2;
+// valueAxisRenderer.grid.template.strokeOpacity = 0.2;
 
 
 // series

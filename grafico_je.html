@@ -1,0 +1,273 @@
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+	
+<style type="text/css"></style>
+
+<!-- Styles -->
+<style>
+body { background-color: rgb(0,0,0); color: #ffffff; font-family: sans-serif;}
+#chartdiv {
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dark);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+chart.maskBullets = false;
+
+var xAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+var yAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+
+yAxis.dataFields.category = "weekday";
+xAxis.renderer.minGridDistance = 40;
+xAxis.dataFields.category = "hour";
+
+xAxis.renderer.grid.template.disabled = false;
+yAxis.renderer.grid.template.disabled = true;
+xAxis.renderer.axisFills.template.disabled = true;
+yAxis.renderer.axisFills.template.disabled = true;
+yAxis.renderer.ticks.template.disabled = true;
+xAxis.renderer.ticks.template.disabled = true;
+
+yAxis.renderer.inversed = true;
+
+var series = chart.series.push(new am4charts.ColumnSeries());
+series.dataFields.categoryY = "weekday";
+series.dataFields.categoryX = "hour";
+series.dataFields.value = "value";
+series.columns.template.disabled = true;
+series.sequencedInterpolation = true;
+//series.defaultState.transitionDuration = 3000;
+
+var bullet = series.bullets.push(new am4core.Circle());
+bullet.tooltipText = "{value.workingValue.formatNumber('#.')}";
+bullet.strokeWidth = 3;
+bullet.stroke = am4core.color("#ffffff");
+bullet.fill = am4core.color("#C076FF");
+bullet.strokeOpacity = 0;
+
+bullet.adapter.add("tooltipY", function(tooltipY, target) {
+  return -target.radius + 1;
+})
+
+series.heatRules.push({
+  property: "radius",
+  target: bullet,
+  min: 3,
+  max: 100
+});
+
+bullet.hiddenState.properties.scale = 0.01;
+bullet.hiddenState.properties.opacity = 1;
+
+var hoverState = bullet.states.create("hover");
+hoverState.properties.strokeOpacity = 1;
+hoverState.properties.fill = am4core.color("#E6C9FF");
+
+
+chart.data = [
+  {
+    "hour": "2005",
+    "weekday": "Guerre Stellari",
+    "value": 66
+  },
+  {
+    "hour": "2006",
+    "weekday": "Guerre Stellari",
+    "value": 120
+  },
+  {
+    "hour": "2007",
+    "weekday": "Guerre Stellari",
+    "value": 221
+  },
+  {
+    "hour": "2008",
+    "weekday": "Guerre Stellari",
+    "value": 468
+  },
+  {
+    "hour": "2009",
+    "weekday": "Guerre Stellari",
+    "value": 168
+  },
+  {
+    "hour": "2010",
+    "weekday": "Guerre Stellari",
+    "value": 194
+  },
+  {
+    "hour": "2011",
+    "weekday": "Guerre Stellari",
+    "value": 137
+  },
+  {
+    "hour": "2012",
+    "weekday": "Guerre Stellari",
+    "value": 137
+  },
+  {
+    "hour": "2013",
+    "weekday": "Guerre Stellari",
+    "value": 141
+  },
+  {
+    "hour": "2014",
+    "weekday": "Guerre Stellari",
+    "value": 111
+  },
+  {
+    "hour": "2015",
+    "weekday": "Guerre Stellari",
+    "value": 528
+  },
+  {
+    "hour": "2016",
+    "weekday": "Guerre Stellari",
+    "value": 444
+  },
+  {
+    "hour": "2017",
+    "weekday": "Guerre Stellari",
+    "value": 540
+  },
+  {
+    "hour": "2018",
+    "weekday": "Guerre Stellari",
+    "value": 185
+  },
+  {
+    "hour": "2019",
+    "weekday": "Guerre Stellari",
+    "value": 225
+  },
+  {
+    "hour": "2020",
+    "weekday": "Guerre Stellari",
+    "value": 196
+  },
+
+
+  {
+    "hour": "2005",
+    "weekday": "Vaccino",
+    "value": 0
+  },
+  {
+    "hour": "2006",
+    "weekday": "Vaccino",
+    "value": 1
+  },
+  {
+    "hour": "2007",
+    "weekday": "Vaccino",
+    "value": 11
+  },
+  {
+    "hour": "2008",
+    "weekday": "Vaccino",
+    "value": 10
+  },
+  {
+    "hour": "2009",
+    "weekday": "Vaccino",
+    "value": 46
+  },
+  {
+    "hour": "2010",
+    "weekday": "Vaccino",
+    "value": 51
+  },
+  {
+    "hour": "2011",
+    "weekday": "Vaccino",
+    "value": 19
+  },
+  {
+    "hour": "2012",
+    "weekday": "Vaccino",
+    "value": 56
+  },
+  {
+    "hour": "2013",
+    "weekday": "Vaccino",
+    "value": 44
+  },
+  {
+    "hour": "2014",
+    "weekday": "Vaccino",
+    "value": 33
+  },
+  {
+    "hour": "2015",
+    "weekday": "Vaccino",
+    "value": 43
+  },
+  {
+    "hour": "2016",
+    "weekday": "Vaccino",
+    "value": 58
+  },
+  {
+    "hour": "2017",
+    "weekday": "Vaccino",
+    "value": 142
+  },
+  {
+    "hour": "2018",
+    "weekday": "Vaccino",
+    "value": 68
+  },
+  {
+    "hour": "2019",
+    "weekday": "Vaccino",
+    "value": 68
+  },
+  {
+    "hour": "2020",
+    "weekday": "Vaccino",
+    "value": 115
+  }
+
+];
+
+// this changes data each 3 seconds
+// setInterval(function(){
+//     series.dataItems.each(function(dataItem){
+//         dataItem.value += dataItem.value * Math.random() * 0.3;        
+//     })
+// }, 3000)
+
+
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+
+
+	
+
+	
+
+
+
