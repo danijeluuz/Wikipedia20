@@ -29,7 +29,7 @@ a:hover{
     color: #ccff00;
     cursor: pointer;
     text-decoration: none;
-}
+} 
 
 
 .bottone{
@@ -37,7 +37,7 @@ a:hover{
 }
 
 .bottone:hover{
-    background-color: #EF02F5;
+    background-color: 'magenta';
 }
 
 
@@ -123,7 +123,6 @@ a:hover{
     font-size: 4.75vw;
     font-weight: 400;
     margin-top: 1.5vw;
-    color: white;
     /*margin: 0;*/
 }
 
@@ -161,8 +160,10 @@ button{
 }
 
 button:hover{
-    background-color: #EF02F5;
+    background-color: magenta;
 }
+
+
 
 .footer{
     position: absolute;
@@ -177,8 +178,7 @@ img{
     font-family: 'Archivo', sans-serif;
     font-size: 4.75vw;
     visibility: hidden;
-    background-color:none;
-    color:#EF02F5;
+    color:magenta;
     top: -1vh;
    text-align: left;
    right: 18.5vw;
@@ -197,7 +197,7 @@ img{
     font-size: 4.75vw;
     visibility: hidden;
     background-color:none;
-    color:#EF02F5;
+    color:magenta;
     top: -1vh;
    text-align: left;
    right: 20vw;
@@ -211,18 +211,19 @@ img{
   }
 
   .bottone3{
-      top: 85vh;
+      top: 85%;
       left:90vw;
       position: fixed;
   }
 
   .bottone3 .tooltiptext {
     font-family: 'Archivo', sans-serif;
-    font-size: 3em;
+    font-size: 3vw;
     visibility: hidden;
     background-color:none;
-    color:#EF02F5;
-    top: 20px;
+    color:magenta;
+    background-color: black;
+    top: 0px;
     right: 7vw;
     /* Position the tooltip */
     position: absolute;
@@ -234,22 +235,23 @@ img{
   }
 
   .bottone4{
-    top: 85vh;
+    top: 85%;
     left:90vw;
     position: fixed;
 }
 
 .bottone4 .tooltiptext {
-  font-family: 'Archivo', sans-serif;
-  font-size: 3em;
-  visibility: hidden;
-  background-color:none;
-  color:#EF02F5;
-  top: 20px;
-  right: 7vw;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
+    font-family: 'Archivo', sans-serif;
+    font-size: 3vw;
+    visibility: hidden;
+    background-color:none;
+    color:magenta;
+    background-color: black;
+    top: 0px;
+    right: 7vw;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
 }
 
 .bottone4:hover .tooltiptext {

@@ -1,75 +1,12 @@
 var turns = 0;
 
-
-function articoli() {
-    document.getElementById("art1").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli2() {
-    document.getElementById("art2").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli3() {
-    document.getElementById("art3").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli4() {
-    document.getElementById("art4").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli5() {
-    document.getElementById("art5").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli6() {
-    document.getElementById("art6").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli7() {
-    document.getElementById("art7").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli8() {
-    document.getElementById("art8").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli9() {
-    document.getElementById("art9").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli10() {
-    document.getElementById("art10").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli11() {
-    document.getElementById("art11").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli12() {
-    document.getElementById("art12").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli13() {
-    document.getElementById("art13").style.color = '#EF02F5';
-    return false;
-} 
-
-function articoli14() {
-    document.getElementById("art14").style.color = '#EF02F5';
-    return false;
-} 
+function articoli(el) {
+   
+  if (el.style.color === 'magenta') {
+    el.style.color = 'white';   
+  }
+  else el.style.color = 'magenta';
+}
 
 
 
@@ -85,10 +22,12 @@ am4core.useTheme(am4themes_dark);
 
 // disclaimer: this data is not accuarate, don't use it for any puroposes
 // first temperature is average for 1973-1980 period
+//x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114];
 
 var temperatures = {
 
     "": [
+        //x ,
         ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114],
         ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
@@ -206,7 +145,7 @@ series.dataFields.categoryX = "country";
 series.tooltipText = "{categoryX}:{valueY.value}";
 
 // this makes columns to be of a different color, depending on value
-series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#F6C8F5"), max: am4core.color("#EF02F5"), dataField: "valueY" });
+series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#F6C8F5"), max: am4core.color('magenta'), dataField: "valueY" });
 
 // cursor
 var cursor = new am4charts.RadarCursor();
@@ -333,3 +272,4 @@ slider.events.on("rangechanged", function () {
 })
 
 }); // end am4core.ready()
+
