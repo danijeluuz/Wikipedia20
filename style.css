@@ -14,7 +14,7 @@ body {
 }
 
 .filetto{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     margin-left: 0px;
     margin-right: 0px; 
 }
@@ -31,19 +31,12 @@ a:hover{
     text-decoration: none;
 }
 
-.bottone1{
+
+.bottone{
     background-color: black;
 }
 
-.bottone1:hover{
-    background-color: #ccff00;
-}
-
-.bottone2{
-    background-color: black;
-}
-
-.bottone2:hover{
+.bottone:hover{
     background-color: #EF02F5;
 }
 
@@ -78,6 +71,9 @@ a:hover{
      grid-column: span 6;
 }
 
+.ottupla {
+    grid-column: span 8;
+}
 .nonupla {
     grid-column: span 9;
 }
@@ -86,16 +82,19 @@ a:hover{
     grid-column: span 10;
 }
 
+.undicesima{
+    grid-column: span 11;
+}
+
 .tutta {
     grid-column: span 12;
 }
 
 .capitoli {
-    grid-column: span 12;
+    width: 100vw;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    position: relative;
     top: 25vh
 }
 
@@ -112,10 +111,8 @@ a:hover{
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 5vw;
+    font-size: 4.75vw;
     font-weight: 400;
-    margin-left: 2vw;
-    margin-top: 1.5vw;
     /*margin: 0;*/
 }
 
@@ -123,7 +120,7 @@ a:hover{
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 5vw;
+    font-size: 4.75vw;
     font-weight: 400;
     margin-top: 1.5vw;
     color: white;
@@ -138,19 +135,18 @@ p {
     line-height: 1.25;
     margin-right: 2vw;
     margin-bottom: 0px;
-    margin-top: 2.33vw;
+    margin-top: 1.33vw;
     /*margin: 0;*/
 
 }
 
 hr{
     background-color: white;
-    border: 0.5px solid white;
+    border: 1px solid white;
     margin-left: -3em;
     margin-right: -3em;
     padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 5px;
 
 }
 
@@ -164,6 +160,10 @@ button{
     text-align: center;
 }
 
+button:hover{
+    background-color: #EF02F5;
+}
+
 .footer{
     position: absolute;
     top: 85vh;
@@ -171,5 +171,86 @@ button{
 
 img{
     width: 4vw;
+}
 
+.bottone1 .tooltiptext {
+    font-family: 'Archivo', sans-serif;
+    font-size: 4.75vw;
+    visibility: hidden;
+    background-color:none;
+    color:#EF02F5;
+    top: -1vh;
+   text-align: left;
+    right: 13vw;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .bottone1:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .bottone2 .tooltiptext {
+    font-family: 'Archivo', sans-serif;
+    font-size: 4.75vw;
+    visibility: hidden;
+    background-color:none;
+    color:#EF02F5;
+    top: -1vh;
+   text-align: left;
+    right: 27.5vw;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .bottone2:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .bottone3{
+      top: 85vh;
+      left:90vw;
+      position: fixed;
+  }
+
+  .bottone3 .tooltiptext {
+    font-family: 'Archivo', sans-serif;
+    font-size: 3em;
+    visibility: hidden;
+    background-color:none;
+    color:#EF02F5;
+    top: 20px;
+    right: 7vw;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .bottone3:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .bottone4{
+    top: 85vh;
+    left:90vw;
+    position: fixed;
+}
+
+.bottone4 .tooltiptext {
+  font-family: 'Archivo', sans-serif;
+  font-size: 3em;
+  visibility: hidden;
+  background-color:none;
+  color:#EF02F5;
+  top: 20px;
+  right: 7vw;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.bottone4:hover .tooltiptext {
+  visibility: visible;
 }

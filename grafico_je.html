@@ -2,6 +2,8 @@
 <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
 <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
 	
 <style type="text/css"></style>
 
@@ -61,7 +63,7 @@ var bullet = series.bullets.push(new am4core.Circle());
 bullet.tooltipText = "{value.workingValue.formatNumber('#.')}";
 bullet.strokeWidth = 3;
 bullet.stroke = am4core.color("#ffffff");
-bullet.fill = am4core.color("#3F1791");
+bullet.fill = am4core.color("#EF02F5");
 bullet.strokeOpacity = 0;
 
 bullet.adapter.add("tooltipY", function(tooltipY, target) {
@@ -79,15 +81,16 @@ bullet.hiddenState.properties.scale = 0.01;
 bullet.hiddenState.properties.opacity = 1;
 
 var hoverState = bullet.states.create("hover");
-hoverState.properties.strokeOpacity = 1;
-hoverState.properties.fill = am4core.color("#E6C9FF");
+hoverState.properties.strokeOpacity = 0;
+hoverState.properties.fill = am4core.color("#ccff00");
 
 
 chart.data = [
   {
     "hour": "2005",
     "weekday": "Guerre Stellari",
-    "value": 66
+    "value": 66 
+
   },
   {
     "hour": "2006",
@@ -262,7 +265,91 @@ chart.data = [
 </script>
 
 <!-- HTML -->
-<div id="chartdiv"></div>
+
+<div class="griglia" style="margin-top: -0.5em;">
+
+  <div class="cella undicesima articoli" style="font-size: 3em">
+
+    
+    <a href="#" id="art1" onclick="articoli()">
+      Vaccino
+    </a>
+
+    <a href="#" id="art2" onclick="articoli2()">
+      Guerre Stellari
+    </a>
+
+    <a href="#" id="art3" onclick="articoli3()">
+      Hamburger
+    </a>
+
+    <a href="#" id="art4" onclick="articoli4()">
+      Yoga
+    </a>
+
+    <a href="#" id="art5" onclick="articoli5()">
+      Star Trek
+    </a>
+
+    <a href="#" id="art6" onclick="articoli6()">
+      Leonardo DiCaprio
+    </a>
+
+    <a href="#" id="art7" onclick="articoli7()">
+      Amatrice
+    </a>
+
+    <a href="#" id="art8" onclick="articoli8()">
+      Barack Obama
+    </a>
+
+    <a href="#" id="art9" onclick="articoli9()">
+      Cetacei
+    </a>
+
+    <a href="#" id="art10" onclick="articoli10()">
+      Rugby
+    </a>
+
+    <a href="#" id="art11" onclick="articoli11()">
+      Quarantena
+    </a>
+
+    <a href="#" id="art12" onclick="articoli12()">
+      Glicolisi
+    </a>
+
+    <a href="#" id="art13" onclick="articoli13()">
+      Nepal
+    </a>
+
+    <a href="#" id="art14" onclick="articoli14()">
+      Pasta
+    </a>
+
+      
+
+  </div>
+
+  <div class="cella singola">
+    <img src="img/search_white_24dp.svg" style="margin-top: 2em;">
+  </div>
+</div>
+
+<hr style="margin-top: -20px; padding: 0; margin-right: 0;">
+<div id="chartdiv" style="margin-bottom: 20px;"></div>
+
+<div class="cella singola">
+  <div class="footer">
+    <form action="covid1.html">
+      <button class="bottone4">
+        <span class="tooltiptext">Dettaglio</span>
+        <img src="img/arrow_forward_white_48dp.svg" alt="">	
+      </button>
+  </form>
+  </div>
+</div>
+
 
 
 	

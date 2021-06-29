@@ -1,156 +1,75 @@
 var turns = 0;
 
+
 function articoli() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art1").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art1").style.color = 'white';
-    }
-}
+    document.getElementById("art1").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli2() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art2").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art2").style.color = 'white';
-    }
-}
+    document.getElementById("art2").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli3() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art3").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art3").style.color = 'white';
-    }
-}
-
+    document.getElementById("art3").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli4() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art4").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art4").style.color = 'white';
-    }
-}
-
+    document.getElementById("art4").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli5() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art5").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art5").style.color = 'white';
-    }
-}
-
+    document.getElementById("art5").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli6() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art6").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art6").style.color = 'white';
-    }
-}
-
+    document.getElementById("art6").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli7() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art7").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art7").style.color = 'white';
-    }
-}
-
+    document.getElementById("art7").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli8() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art8").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art8").style.color = 'white';
-    }
-}
-
+    document.getElementById("art8").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli9() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art9").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art9").style.color = 'white';
-    }
-}
-
+    document.getElementById("art9").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli10() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art10").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art10").style.color = 'white';
-    }
-}
-
+    document.getElementById("art10").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli11() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art11").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art11").style.color = 'white';
-    }
-}
-
+    document.getElementById("art11").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli12() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art12").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art12").style.color = 'white';
-    }
-}
-
+    document.getElementById("art12").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli13() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art13").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art13").style.color = 'white';
-    }
-}
-
+    document.getElementById("art13").style.color = '#EF02F5';
+    return false;
+} 
 
 function articoli14() {
-    if (turns === 0) {
-        turns++;
-        document.getElementById("art14").style.color = '#EF02F5';
-     } else if (turns === 1) {
-        turns--;
-        document.getElementById("art14").style.color = 'white';
-    }
-}
-
+    document.getElementById("art14").style.color = '#EF02F5';
+    return false;
+} 
 
 
 
@@ -214,7 +133,7 @@ chart.innerRadius = am4core.percent(40);
 var yearLabel = chart.radarContainer.createChild(am4core.Label);
 yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
-yearLabel.fill = am4core.color("#FFF429");
+yearLabel.fill = am4core.color("#ccff00");
 yearLabel.fontSize = 505;
 yearLabel.fillOpacity = 0.075;
 yearLabel.text = String(currentYear);
@@ -287,7 +206,7 @@ series.dataFields.categoryX = "country";
 series.tooltipText = "{categoryX}:{valueY.value}";
 
 // this makes columns to be of a different color, depending on value
-series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#C7B0F5"), max: am4core.color("#EF02F5"), dataField: "valueY" });
+series.heatRules.push({ target: series.columns.template, property: "fill", minValue: 0, maxValue: 600, min: am4core.color("#F6C8F5"), max: am4core.color("#EF02F5"), dataField: "valueY" });
 
 // cursor
 var cursor = new am4charts.RadarCursor();
@@ -299,7 +218,7 @@ cursor.innerRadius = am4core.percent(40);
 cursor.lineY.disabled = true;
 
 cursor.lineX.fillOpacity = 0.25;
-cursor.lineX.fill = am4core.color("#FFF429");
+cursor.lineX.fill = am4core.color("#ccff00");
 cursor.lineX.strokeOpacity = 0;
 cursor.fullWidthLineX = true;
 
