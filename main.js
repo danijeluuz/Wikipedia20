@@ -63,7 +63,7 @@ chart.hiddenState.properties.opacity = 0;
 chart.startAngle = 270 - 180;
 chart.endAngle = 270 + 180;
 
-chart.padding(75,150,5,150)
+chart.padding(110,150,15,150)
 chart.radius = am4core.percent(65);
 chart.innerRadius = am4core.percent(40);
 
@@ -72,7 +72,7 @@ var yearLabel = chart.radarContainer.createChild(am4core.Label);
 yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
-yearLabel.fontSize = 505;
+yearLabel.fontSize = 400;
 yearLabel.fillOpacity = 0.075;
 yearLabel.text = String(currentYear);
 
@@ -163,7 +163,7 @@ cursor.fullWidthLineX = true;
 // year slider
 var yearSliderContainer = chart.createChild(am4core.Container);
 yearSliderContainer.layout = "vertical";
-yearSliderContainer.padding(0, 38, 0, 38);
+yearSliderContainer.padding(80, 38, 0, 38);
 yearSliderContainer.width = am4core.percent(100);
 
 var yearSlider = yearSliderContainer.createChild(am4core.Slider);

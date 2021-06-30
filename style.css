@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500&display=swap');
 
+
 body {
     background-color: black ;
     margin: 0px;
@@ -21,8 +22,7 @@ body {
 
 a{
     text-decoration: none; 
-   color:white;
-
+    color:white;
 }
 
 a:hover{
@@ -31,27 +31,11 @@ a:hover{
     text-decoration: none;
 } 
 
-
-.bottone{
-    background-color: black;
-}
-
-.bottone:hover{
-    background-color: 'magenta';
-}
-
-
-/* 
-
- */
-
 .cella {
-  /*   outline: 1px red solid; */
+    /*outline: 1px red solid; */
     font-family: 'Archivo', sans-serif;
     color: white;    
 }
-
-
 
 .singola{
     grid-column: span 1;
@@ -60,9 +44,11 @@ a:hover{
 .doppia {
      grid-column: span 2;
 }
+
 .tripla {
      grid-column: span 3;
 }
+
 .quadrupla {
      grid-column: span 4;
 }
@@ -74,6 +60,7 @@ a:hover{
 .ottupla {
     grid-column: span 8;
 }
+
 .nonupla {
     grid-column: span 9;
 }
@@ -99,11 +86,13 @@ a:hover{
 }
 
 .titoletti {
+    text-align: left;
     margin: 0px;
-    padding: 0.25vw;
-    font-size: 1.25vw;
-    font-weight: 300;
-    margin-left: 1vw;
+    padding: 0px;
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin-top: 1.5vw;
+    line-height: 1.15em;
     /*margin: 0;*/
 }
 
@@ -152,21 +141,6 @@ hr{
 
 }
 
-button{
-    background-color: black;
-    border-radius: 50%;
-    border-color: white;
-    border: 2px solid white;
-    text-decoration: none;
-    border-style: solid;
-    text-shadow: none;
-    text-align: center;
-}
-
-button:hover{
-    background-color: magenta;
-}
-
 
 
 .footer{
@@ -175,7 +149,29 @@ button:hover{
 }
 
 img{
-    width: 4vw;
+    width: 50px;
+    }
+
+button{
+        background-color: black;
+        border-radius: 50%;
+        border-color: white;
+        border: 2px solid white;
+        text-decoration: none;
+        border-style: solid;
+        text-shadow: none;
+        text-align: center;
+        height: 67px;
+        width: 80px;
+        
+    }
+    
+button:hover{
+        background-color: magenta;
+    }
+    
+.bottone5:hover{
+        background-color: #ccff00;
     }
 
 .bottone1 .tooltiptext {
@@ -185,19 +181,18 @@ img{
     color:magenta;
     background-color: black;
     top: -1vh;
-   text-align: left;
-   right: 18.5vw;
-    
+    text-align: left;
+    right: 18.5vw;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
   }
   
-  .bottone1:hover .tooltiptext {
+.bottone1:hover .tooltiptext {
     visibility: visible;
   }
 
-  .bottone2 .tooltiptext {
+.bottone2 .tooltiptext {
     font-family: 'Archivo', sans-serif;
     font-size: 4.8vw;
     visibility: hidden;
@@ -205,25 +200,39 @@ img{
     color:magenta;
     background-color: black;
     top: -1vh;
-   text-align: left;
-   right: 20vw;
+    text-align: left;
+    right: 20vw;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
   }
   
-  .bottone2:hover .tooltiptext {
+.bottone2:hover .tooltiptext {
     visibility: visible;
   }
 
-  .bottone3{
-      top: 74%;
-      left: 92%;
-      position: fixed;
-      
-  }
+.bottone1{
+    top: calc(100vh - 90px);
+    left: calc(100vw - 250px);
+    position: fixed;
+    z-index: 2;
+}
 
-  .bottone3 .tooltiptext {
+.bottone2{
+    top: calc(100vh - 90px);
+    left: calc(100vw - 125px);
+    position: fixed;
+    z-index: 1;
+}
+
+.bottone3{
+    top: calc(100vh - 175px);
+    left: calc(100vw - 125px);
+    position: fixed;
+    z-index: 2;
+}
+
+.bottone3 .tooltiptext {
     font-family: 'Archivo', sans-serif;
     font-size: 2.5vw;
     visibility: hidden;
@@ -237,13 +246,13 @@ img{
     z-index: 1;
   }
   
-  .bottone3:hover .tooltiptext {
+.bottone3:hover .tooltiptext {
     visibility: visible;
   }
 
-  .bottone4{
-    top: 74%;
-    left:92%;
+.bottone4{
+    top: calc(100vh - 175px);
+    left: calc(100vw - 125px);
     position: fixed;
     z-index: 2;
 }
@@ -267,8 +276,8 @@ img{
 }
 
 .bottone5{
-    top: 85%;
-    left:92%;
+    top: calc(100vh - 90px);
+    left: calc(100vw - 125px);
     position: fixed;
     z-index: 1;
 }
@@ -278,7 +287,7 @@ img{
     font-size: 2.5vw;
     visibility: hidden;
     background-color:none;
-    color:magenta;
+    color:#ccff00;
     background-color: black;
     top: 0px;
     right: 7vw;
@@ -289,4 +298,139 @@ img{
 
 .bottone5:hover .tooltiptext {
   visibility: visible;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px) {
+
+
+    body{
+        overflow-y: scroll;
+    }
+
+    .griglia {
+        max-width: initial;
+        /* display: block; */
+        margin-top: 10px;
+    }
+    .cella {
+        margin-bottom: 1em;
+    }
+    .bottone1{
+        top: calc(100vh - 60px);
+        left:80%;
+        position: fixed;
+        z-index: 2;
+    }
+    .bottone2{
+        top: calc(100vh - 110px);
+        left:80%;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .bottone3{
+        top: calc(100vh - 110px);
+        left:80%;
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: 50px;
+    }
+    .bottone4{
+        top: calc(100vh - 110px);
+        left:80%;
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: 50px;
+    }
+    .bottone5{
+        top: calc(100vh - 60px);
+        left:80%;
+        position: fixed;
+        z-index: 2;
+        height: 40px;
+        width: 50px;
+    }
+
+    .bottone1 .tooltiptext {
+        font-size: 4.5vw;
+        right: 70px;  
+        visibility: visible;
+      }
+
+    .bottone2 .tooltiptext {
+        font-size: 4.5vw;
+        right: 70px;  
+        visibility: visible;
+      }
+    .bottone3 .tooltiptext {
+        font-size: 4.5vw;
+        right: 70px;  
+        visibility: visible;
+      }
+
+    .bottone4 .tooltiptext {
+        font-size: 4.5vw;
+        right: 70px;  
+        visibility: visible;
+      }
+
+    .bottone5 .tooltiptext {
+        font-size: 4.5vw;
+        right: 70px;
+        visibility: visible;
+    }
+
+    button{
+        background-color: black;
+        border-radius: 50%;
+        border-color: white;
+        border: 2px solid white;
+        text-decoration: none;
+        border-style: solid;
+        text-shadow: none;
+        text-align: center;
+        height: 40px;
+        width: 50px;
+
+    }
+
+    img{
+        width: 33px;
+    }
+
+    .titolo{
+        font-size: 2.5em;
+    }
+
+    .articoli{
+        font-size: 2.5em;
+    }
+
+    .titoletti {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        font-size: 4.5vw;
+        font-weight: 400;
+        margin-top: 1.5vw;
+        line-height: 1.15em;
+        /*margin: 0;*/
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    hr{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    
+
+
 }
