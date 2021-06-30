@@ -111,8 +111,9 @@ a:hover{
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 4.75vw;
+    font-size: 4.8vw;
     font-weight: 400;
+    line-height: 1.15em;
     /*margin: 0;*/
 }
 
@@ -120,9 +121,10 @@ a:hover{
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 4.75vw;
+    font-size: 4.8vw;
     font-weight: 400;
     margin-top: 1.5vw;
+    line-height: 1.15em;
     /*margin: 0;*/
 }
 
@@ -135,6 +137,7 @@ p {
     margin-right: 2vw;
     margin-bottom: 0px;
     margin-top: 1.33vw;
+    
     /*margin: 0;*/
 
 }
@@ -153,6 +156,7 @@ button{
     background-color: black;
     border-radius: 50%;
     border-color: white;
+    border: 2px solid white;
     text-decoration: none;
     border-style: solid;
     text-shadow: none;
@@ -172,13 +176,14 @@ button:hover{
 
 img{
     width: 4vw;
-}
+    }
 
 .bottone1 .tooltiptext {
     font-family: 'Archivo', sans-serif;
-    font-size: 4.75vw;
+    font-size: 4.8vw;
     visibility: hidden;
     color:magenta;
+    background-color: black;
     top: -1vh;
    text-align: left;
    right: 18.5vw;
@@ -194,10 +199,11 @@ img{
 
   .bottone2 .tooltiptext {
     font-family: 'Archivo', sans-serif;
-    font-size: 4.75vw;
+    font-size: 4.8vw;
     visibility: hidden;
     background-color:none;
     color:magenta;
+    background-color: black;
     top: -1vh;
    text-align: left;
    right: 20vw;
@@ -211,14 +217,15 @@ img{
   }
 
   .bottone3{
-      top: 85%;
-      left:90vw;
+      top: 74%;
+      left: 92%;
       position: fixed;
+      
   }
 
   .bottone3 .tooltiptext {
     font-family: 'Archivo', sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
     visibility: hidden;
     background-color:none;
     color:magenta;
@@ -235,14 +242,40 @@ img{
   }
 
   .bottone4{
-    top: 85%;
-    left:90vw;
+    top: 74%;
+    left:92%;
     position: fixed;
+    z-index: 2;
 }
 
 .bottone4 .tooltiptext {
     font-family: 'Archivo', sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
+    visibility: hidden;
+    background-color:none;
+    color:magenta;
+    background-color: black;
+    top: 0px;
+    right: 7vw;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+}
+
+.bottone4:hover .tooltiptext {
+  visibility: visible;
+}
+
+.bottone5{
+    top: 85%;
+    left:92%;
+    position: fixed;
+    z-index: 1;
+}
+
+.bottone5 .tooltiptext {
+    font-family: 'Archivo', sans-serif;
+    font-size: 2.5vw;
     visibility: hidden;
     background-color:none;
     color:magenta;
@@ -254,6 +287,6 @@ img{
     z-index: 1;
 }
 
-.bottone4:hover .tooltiptext {
+.bottone5:hover .tooltiptext {
   visibility: visible;
 }

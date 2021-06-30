@@ -1,11 +1,14 @@
 var turns = 0;
 
+var   x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114]; 
+/* var x=0; */
 function articoli(el) {
    
   if (el.style.color === 'magenta') {
-    el.style.color = 'white';   
+    el.style.color = 'white';  
+    
   }
-  else el.style.color = 'magenta';
+  else (el.style.color = 'magenta')
 }
 
 
@@ -22,13 +25,13 @@ am4core.useTheme(am4themes_dark);
 
 // disclaimer: this data is not accuarate, don't use it for any puroposes
 // first temperature is average for 1973-1980 period
-//x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114];
+
+console.log(x);
 
 var temperatures = {
-
     "": [
-        //x ,
-        ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114],
+        x ,
+       /*  ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114], */
         ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
         ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17],
@@ -42,10 +45,6 @@ var temperatures = {
         ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5],
         ["Nepal", 56, 88, 119, 115, 109, 48, 42, 46, 37, 26, 102, 18, 29, 52, 53, 62],
         ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88], 
-      
-         
-
-    
     ]
 
 }
