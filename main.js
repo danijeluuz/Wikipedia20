@@ -72,7 +72,7 @@ var yearLabel = chart.radarContainer.createChild(am4core.Label);
 yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
-yearLabel.fontSize = 400;
+yearLabel.fontSize = 475;
 yearLabel.fillOpacity = 0.075;
 yearLabel.text = String(currentYear);
 

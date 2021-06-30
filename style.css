@@ -209,11 +209,11 @@ button:hover{
   
 .bottone2:hover .tooltiptext {
     visibility: visible;
-  }
+}
 
 .bottone1{
     top: calc(100vh - 90px);
-    left: calc(100vw - 250px);
+    left: calc(100vw - 225px);
     position: fixed;
     z-index: 2;
 }
