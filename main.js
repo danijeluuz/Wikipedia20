@@ -3,6 +3,7 @@ var turns = 0;
 var   x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114]; 
 /* var x="0"; */
 
+
 function articoli(el) {
   if (el.style.color === 'magenta') {
     el.style.color = 'white';  
@@ -29,21 +30,21 @@ console.log(x);
 var temperatures = {
     "": [
         
-        x,
-       /*  ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114], */
-        ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
+     /*    x, */
+        ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114],
+/*         ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
-        ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17],
+        ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17], */
         ["★ Star Trek", 168, 302, 178, 152, 131, 75, 60, 116, 52, 71, 52, 117, 106, 42, 30, 51], 
-        ["Leonardo DiCaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315],
-        ["Amatrice", 14, 36, 56, 28, 72, 67, 69, 39, 38, 16, 52, 183, 111, 65, 63, 26],
+/*         ["Leonardo DiCaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315], */
+      /*   ["Amatrice", 14, 36, 56, 28, 72, 67, 69, 39, 38, 16, 52, 183, 111, 65, 63, 26], */
         ["Barack Obama", 0, 48, 114, 505, 565, 167, 235, 266, 231, 233, 393, 419, 208, 248, 44, 37],
-        ["★ Cetacei", 38, 18, 41, 247, 36, 20, 39, 20, 19, 25, 16, 20, 11, 15, 41, 17],
-        ["Rugby", 66, 169, 336, 95, 87, 81, 158, 84, 74, 45, 71, 63, 33, 37, 34, 45],
-        ["Quarantena", 0, 0, 14, 6, 6, 9, 5, 2, 9, 6, 7, 4, 0, 3, 2, 87],
-        ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5],
+    /*     ["★ Cetacei", 38, 18, 41, 247, 36, 20, 39, 20, 19, 25, 16, 20, 11, 15, 41, 17],
+        ["Rugby", 66, 169, 336, 95, 87, 81, 158, 84, 74, 45, 71, 63, 33, 37, 34, 45], */
+       /*  ["Quarantena", 0, 0, 14, 6, 6, 9, 5, 2, 9, 6, 7, 4, 0, 3, 2, 87], */
+       /*  ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5], */
         ["Nepal", 56, 88, 119, 115, 109, 48, 42, 46, 37, 26, 102, 18, 29, 52, 53, 62],
-        ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88], 
+       /*  ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88],  */
     ]
 
 }
@@ -204,8 +205,78 @@ function updateRadarData(year) {
         currentYear = year;
         yearLabel.text = String(currentYear);
         series.dataFields.valueY = "value" + currentYear;
-        chart.invalidateRawData();
+        chart.invalidateRawData();    
     }
+
+    if(currentYear == '2005' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
+    }
+    else if(currentYear == '2006' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Nepal"+ "<br>"+ "Maioisti e Governo nepalese creano una Costituzione provvisoria";
+    }
+    else if(currentYear == '2007' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Nepal"+ "<br>"+"Approvazione di un emendamento costituzionale che avvia ad una Repubblica federale. ";
+    }
+    else if(currentYear == '2008' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Nepal"+ "<br>"+"Viene proclamata la Repubblica";
+    }
+    else if(currentYear == '2009' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
+    }
+    else if(currentYear == '2010' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+         "";
+    }
+    else if(currentYear == '2011' ){
+        var elem = document.getElementById("informazioni").innerHTML = 
+        "Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
+    }
+    else if(currentYear == '2012' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+         "";
+    }
+    else if(currentYear == '2013' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Star Trek"+ "<br>"+"Esce il film Into Darkness";
+    }
+    else if(currentYear == '2014' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "";
+    }
+    else if(currentYear == '2015' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Star Trek"+ "<br>"+"Viene annunciata la serie Star Trek: Discovery" +"<br>" + "<br>" +"Nepal"+ "<br>"+"Un violento terremoto causa molte vittime." +"<br>" + "B. D. Bhandary diventa presidentessa del Nepal";
+    }
+
+    else if(currentYear == '2016' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
+    }
+    else if(currentYear == '2017' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
+    }
+    else if(currentYear == '2018' ){
+        var elem = document.getElementById("informazioni").innerHTML = "";
+    }
+    else if(currentYear == '2019' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Nepal"+ "<br>"+"Viene lanciato NepaliSat-1, primo satellite nepalese";
+    }
+    else if(currentYear == '2020' ){
+        var elem = document.getElementById("informazioni").innerHTML =
+        "Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+ "Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
+    }
+    else{
+        elem = document.getElementById("informazioni").innerHTML = "";
+        elem.style.color = 'white';
+    }
+
 }
 
 function createRange(name, continentData, index) {

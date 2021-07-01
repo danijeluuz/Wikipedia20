@@ -301,6 +301,21 @@ button:hover{
   visibility: visible;
 }
 
+.info{
+    line-height: 1.2;
+    position: fixed;
+    left: 2vw;
+    margin-right: 88vw;
+    margin-bottom: 0px;
+    top: 20vh;
+    color: white;
+}
+
+
+
+
+
+
 /* RESPONSIVE */
 @media (max-width:600px) {
 
