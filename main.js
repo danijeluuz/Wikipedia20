@@ -72,8 +72,8 @@ var yearLabel = chart.radarContainer.createChild(am4core.Label);
 yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
-yearLabel.fontSize = 420;
-yearLabel.fillOpacity = 0.1;
+yearLabel.fontSize =550;
+yearLabel.fillOpacity = 0.11;
 yearLabel.text = String(currentYear);
 
 // zoomout button
@@ -163,7 +163,7 @@ cursor.fullWidthLineX = true;
 // year slider
 var yearSliderContainer = chart.createChild(am4core.Container);
 yearSliderContainer.layout = "vertical";
-yearSliderContainer.padding(75, 110, 15, 25);
+yearSliderContainer.padding(90, 120, 15, 10);
 yearSliderContainer.width = am4core.percent(100);
 
 var yearSlider = yearSliderContainer.createChild(am4core.Slider);

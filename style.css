@@ -302,7 +302,7 @@ button:hover{
 }
 
 .info{
-    font-size: 1.33vw;
+    font-size: 1.25vw;
     line-height: 1.2;
     position: sticky;
     position: -webkit-sticky;
@@ -310,7 +310,7 @@ button:hover{
     margin-right: 85vw;
     margin-bottom: 0px;
     padding-top: 10px;
-    top: 50px;
+    top: 20px;
     color: white;
 }
 
