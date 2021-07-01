@@ -4,7 +4,7 @@
 body {
     background-color: black ;
     margin: 0px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .griglia {
@@ -183,7 +183,7 @@ button:hover{
     background-color: black;
     top: -1vh;
     text-align: left;
-    right: 320px;  
+    right: 150px;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -202,7 +202,7 @@ button:hover{
     background-color: black;
     top: -1vh;
     text-align: left;
-    right: 325px;  
+    right:250px;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -241,7 +241,7 @@ button:hover{
     color:magenta;
     background-color: black;
     top: 0px;
-    right: 7vw;
+    right: 100px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -266,7 +266,7 @@ button:hover{
     color:magenta;
     background-color: black;
     top: 0px;
-    right: 7vw;
+    right:100px;
     /* Position the tooltip */
     position: absolute;
     z-index: 2;
@@ -291,7 +291,7 @@ button:hover{
     color:#ccff00;
     background-color: black;
     top: 0px;
-    right: 7vw;
+    right: 100px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -302,12 +302,15 @@ button:hover{
 }
 
 .info{
+    font-size: 1.33vw;
     line-height: 1.2;
-    position: fixed;
-    left: 2vw;
-    margin-right: 88vw;
+    position: sticky;
+    position: -webkit-sticky;
+    margin-left: 2vw;
+    margin-right: 85vw;
     margin-bottom: 0px;
-    top: 20vh;
+    padding-top: 10px;
+    top: 50px;
     color: white;
 }
 

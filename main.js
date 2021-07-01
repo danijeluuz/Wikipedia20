@@ -63,7 +63,7 @@ chart.hiddenState.properties.opacity = 0;
 chart.startAngle = 270 - 180;
 chart.endAngle = 270 + 180;
 
-chart.padding(110,150,15,150)
+chart.padding(130,150,15,220)
 chart.radius = am4core.percent(65);
 chart.innerRadius = am4core.percent(40);
 
@@ -72,7 +72,7 @@ var yearLabel = chart.radarContainer.createChild(am4core.Label);
 yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
-yearLabel.fontSize = 475;
+yearLabel.fontSize = 420;
 yearLabel.fillOpacity = 0.1;
 yearLabel.text = String(currentYear);
 
@@ -163,7 +163,7 @@ cursor.fullWidthLineX = true;
 // year slider
 var yearSliderContainer = chart.createChild(am4core.Container);
 yearSliderContainer.layout = "vertical";
-yearSliderContainer.padding(80, 38, 0, 38);
+yearSliderContainer.padding(75, 110, 15, 25);
 yearSliderContainer.width = am4core.percent(100);
 
 var yearSlider = yearSliderContainer.createChild(am4core.Slider);
@@ -210,23 +210,23 @@ function updateRadarData(year) {
 
     if(currentYear == '2005' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
+        "🡪 " +"Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
     }
     else if(currentYear == '2006' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Nepal"+ "<br>"+ "Maioisti e Governo nepalese creano una Costituzione provvisoria";
+        "🡪 " +"Nepal"+ "<br>"+ "Maioisti e Governo nepalese creano una Costituzione provvisoria";
     }
     else if(currentYear == '2007' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Nepal"+ "<br>"+"Approvazione di un emendamento costituzionale che avvia ad una Repubblica federale. ";
+        "🡪 " +"Nepal"+ "<br>"+"Approvazione di un emendamento costituzionale che avvia ad una Repubblica federale. ";
     }
     else if(currentYear == '2008' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Nepal"+ "<br>"+"Viene proclamata la Repubblica";
+        "🡪 " +"Nepal"+ "<br>"+"Viene proclamata la Repubblica";
     }
     else if(currentYear == '2009' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
+        "🡪 " +"Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
     }
     else if(currentYear == '2010' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -234,7 +234,7 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2011' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
+        "🡪 " +"Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
     }
     else if(currentYear == '2012' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -242,7 +242,7 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2013' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Star Trek"+ "<br>"+"Esce il film Into Darkness";
+        "🡪 " +"Star Trek"+ "<br>"+"Esce il film Into Darkness";
     }
     else if(currentYear == '2014' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -250,27 +250,27 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2015' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Star Trek"+ "<br>"+"Viene annunciata la serie Star Trek: Discovery" +"<br>" + "<br>" +"Nepal"+ "<br>"+"Un violento terremoto causa molte vittime." +"<br>" + "B. D. Bhandary diventa presidentessa del Nepal";
+        "🡪 " +"Star Trek"+ "<br>"+"Viene annunciata la serie Star Trek: Discovery" +"<br>" + "<br>" + "🡪 " +"Nepal"+ "<br>"+"Un violento terremoto causa molte vittime." +"<br>" + "B. D. Bhandary diventa presidentessa del Nepal";
     }
 
     else if(currentYear == '2016' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
+        "🡪 " + "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "🡪 " + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
     }
     else if(currentYear == '2017' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
+        "🡪 "+"Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+ "🡪 " +"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
     }
     else if(currentYear == '2018' ){
         var elem = document.getElementById("informazioni").innerHTML = "";
     }
     else if(currentYear == '2019' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Nepal"+ "<br>"+"Viene lanciato NepaliSat-1, primo satellite nepalese";
+        "🡪 " +"Nepal"+ "<br>"+"Viene lanciato NepaliSat-1, primo satellite nepalese";
     }
     else if(currentYear == '2020' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+ "Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
+        "🡪 " +"Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+ "Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
     }
     else{
         elem = document.getElementById("informazioni").innerHTML = "";
