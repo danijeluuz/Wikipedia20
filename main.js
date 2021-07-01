@@ -1,16 +1,14 @@
 var turns = 0;
 
 var   x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114]; 
-/* var x=0; */
+/* var x="0"; */
+
 function articoli(el) {
-   
   if (el.style.color === 'magenta') {
     el.style.color = 'white';  
-    
   }
   else (el.style.color = 'magenta')
 }
-
 
 
 am4core.ready(function() {
@@ -30,7 +28,8 @@ console.log(x);
 
 var temperatures = {
     "": [
-        x ,
+        
+        x,
        /*  ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114], */
         ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
@@ -73,7 +72,7 @@ yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
 yearLabel.fontSize = 475;
-yearLabel.fillOpacity = 0.075;
+yearLabel.fillOpacity = 0.1;
 yearLabel.text = String(currentYear);
 
 // zoomout button
@@ -105,7 +104,7 @@ categoryAxisLabel.location = 0.5;
 categoryAxisLabel.radius = 28;
 categoryAxisLabel.relativeRotation = 90;
 
-categoryAxisRenderer.fontSize = 15;
+categoryAxisRenderer.fontSize = 16;
 categoryAxisRenderer.minGridDistance = 10;
 categoryAxisRenderer.grid.template.radius = -25;
 categoryAxisRenderer.grid.template.strokeOpacity = 0;
@@ -132,7 +131,7 @@ var valueAxisRenderer = valueAxis.renderer;
 valueAxisRenderer.axisFills.template.disabled = true;
 valueAxisRenderer.ticks.template.disabled = true;
 valueAxisRenderer.minGridDistance = 24;
-// valueAxisRenderer.grid.template.strokeOpacity = 0.2;
+valueAxisRenderer.grid.template.strokeOpacity = 0.2;
 
 
 // series
@@ -253,7 +252,7 @@ function createRange(name, continentData, index) {
 
     var axisLabel = axisRange.label;
     axisLabel.location = 0.5;
-    axisLabel.fill = am4core.color("#ffffff");
+    axisLabel.fill = am4core.color("");
     axisLabel.radius = 3;
     axisLabel.relativeRotation = 0;
 }
@@ -271,4 +270,5 @@ slider.events.on("rangechanged", function () {
 })
 
 }); // end am4core.ready()
+
 

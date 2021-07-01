@@ -102,7 +102,7 @@ a:hover{
     padding: 0px;
     font-size: 4.8vw;
     font-weight: 400;
-    line-height: 1.15em;
+    line-height: 1.1em;
     /*margin: 0;*/
 }
 
@@ -113,16 +113,17 @@ a:hover{
     font-size: 4.8vw;
     font-weight: 400;
     margin-top: 1.5vw;
-    line-height: 1.15em;
+    line-height: 1.1em;
     /*margin: 0;*/
 }
 
 p {
+
     margin: 0px;
     padding: 0px;
     font-size: 1.5vw;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 1.2;
     margin-right: 2vw;
     margin-bottom: 0px;
     margin-top: 1.33vw;
@@ -182,7 +183,7 @@ button:hover{
     background-color: black;
     top: -1vh;
     text-align: left;
-    right: 18.5vw;  
+    right: 320px;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -201,7 +202,7 @@ button:hover{
     background-color: black;
     top: -1vh;
     text-align: left;
-    right: 20vw;
+    right: 325px;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
@@ -212,21 +213,21 @@ button:hover{
 }
 
 .bottone1{
-    top: calc(100vh - 90px);
+    top: calc(100vh - 100px);
     left: calc(100vw - 225px);
     position: fixed;
     z-index: 2;
 }
 
 .bottone2{
-    top: calc(100vh - 90px);
+    top: calc(100vh - 100px);
     left: calc(100vw - 125px);
     position: fixed;
     z-index: 1;
 }
 
 .bottone3{
-    top: calc(100vh - 175px);
+    top: calc(100vh - 185px);
     left: calc(100vw - 125px);
     position: fixed;
     z-index: 2;
@@ -251,7 +252,7 @@ button:hover{
   }
 
 .bottone4{
-    top: calc(100vh - 175px);
+    top: calc(100vh - 185px);
     left: calc(100vw - 125px);
     position: fixed;
     z-index: 2;
@@ -276,7 +277,7 @@ button:hover{
 }
 
 .bottone5{
-    top: calc(100vh - 90px);
+    top: calc(100vh - 100px);
     left: calc(100vw - 125px);
     position: fixed;
     z-index: 1;
