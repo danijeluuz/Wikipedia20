@@ -34,19 +34,19 @@ var temperatures = {
         
      /*    x, */
         ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114],
-/*         ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
+/*      ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
         ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17], */
-        ["★ Star Trek", 168, 302, 178, 152, 131, 75, 60, 116, 52, 71, 52, 117, 106, 42, 30, 51], 
-/*         ["Leonardo DiCaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315], */
-      /*   ["Amatrice", 14, 36, 56, 28, 72, 67, 69, 39, 38, 16, 52, 183, 111, 65, 63, 26], */
-        ["Barack Obama", 0, 48, 114, 505, 565, 167, 235, 266, 231, 233, 393, 419, 208, 248, 44, 37],
-    /*     ["★ Cetacei", 38, 18, 41, 247, 36, 20, 39, 20, 19, 25, 16, 20, 11, 15, 41, 17],
+        ["★ Star Trek", 168, 302, 178, 152, 131, 75, 60, 116, 52, 71, 52, 117, 106, 42, 30, 51],  
+/*      ["Leonardo DiCaprio", 18, 55, 90, 129, 82, 154, 215, 346, 335, 288, 277, 580, 241, 142, 274, 315], */
+/*      ["Amatrice", 14, 36, 56, 28, 72, 67, 69, 39, 38, 16, 52, 183, 111, 65, 63, 26], */
+        ["Barack Obama", 0, 48, 114, 505, 565, 167, 235, 266, 231, 233, 393, 419, 208, 248, 44, 37], 
+/*      ["★ Cetacei", 38, 18, 41, 247, 36, 20, 39, 20, 19, 25, 16, 20, 11, 15, 41, 17],
         ["Rugby", 66, 169, 336, 95, 87, 81, 158, 84, 74, 45, 71, 63, 33, 37, 34, 45], */
-       /*  ["Quarantena", 0, 0, 14, 6, 6, 9, 5, 2, 9, 6, 7, 4, 0, 3, 2, 87], */
-       /*  ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5], */
+/*      ["Quarantena", 0, 0, 14, 6, 6, 9, 5, 2, 9, 6, 7, 4, 0, 3, 2, 87], */
+/*      ["★ Glicolisi", 42, 162, 25, 28, 41, 71, 32, 25, 12, 18, 25, 16, 25, 16, 18, 5], */
         ["Nepal", 56, 88, 119, 115, 109, 48, 42, 46, 37, 26, 102, 18, 29, 52, 53, 62],
-       /*  ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88],  */
+/*      ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88],  */
     ]
 
 }
@@ -173,7 +173,7 @@ yearSlider.events.on("rangechanged", function () {
     updateRadarData(startYear + Math.round(yearSlider.start * (endYear - startYear)));
 })
 yearSlider.orientation = "horizontal";
-yearSlider.start = 0.5;
+yearSlider.start = 0;
 yearSlider.exportable = false;
 
 chart.data = generateRadarData();
@@ -212,59 +212,60 @@ function updateRadarData(year) {
 
     if(currentYear == '2005' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
+        "🡪 " +"Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" + "🡪 " +"Barack Obama"+"<br>" + "Diventa senatore degli Stati Uniti per l'Illinois" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
     }
     else if(currentYear == '2006' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Nepal"+ "<br>"+ "Maioisti e Governo nepalese creano una Costituzione provvisoria";
+        "🡪 " +"Barack Obama" +"<br>" + "Obama appoggia un disegno di legge che autorizza la costruzione di un muro lungo il confine" +"<br>" +"<br>" + "🡪 " +"Nepal"+ "<br>"+ "Maioisti e Governo nepalese creano una Costituzione provvisoria";
     }
     else if(currentYear == '2007' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Nepal"+ "<br>"+"Approvazione di un emendamento costituzionale che avvia ad una Repubblica federale. ";
+        "🡪 " +"Barack Obama" +"<br>" + "Obama annuncia ufficialmente la sua candidatura per le elezioni presidenziali del 2008" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Approvazione di un emendamento costituzionale che avvia ad una Repubblica federale";
     }
     else if(currentYear == '2008' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Vaccino"+ "<br>"+"Controveria relativa al vaccino anti polio"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene proclamata la Repubblica";
+        "🡪 " +"Vaccino"+ "<br>"+"Controversia relativa al vaccino anti polio" +"<br>"+"<br>"+"🡪 " +"Barack Obama"+ "<br>"+"Campagna elettorale YES WE CAN. Fine del mandato come senatore dell'Illinois"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene proclamata la Repubblica";
     }
     else if(currentYear == '2009' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Vaccino"+ "<br>"+"Nel giugno 2009, l'OMS ha dichiarato pandemica l'influenza suina H1N1" +"<br>" + "<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
+        "🡪 " +"Vaccino"+ "<br>"+"Nel giugno 2009, l'OMS ha dichiarato pandemica l'influenza suina H1N1" +"<br>" + "<br>" +"🡪 " +"Barack Obama"+ "<br>"+"Diventa il 44º Presidente degli Stati Uniti d'America"+"<br>"+"<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
     }
     else if(currentYear == '2010' ){
         var elem = document.getElementById("informazioni").innerHTML =
-         "";
+        "🡪 " +"Star Trek" +"<br>" + "Il film Star Trek vince l'Oscar per il miglior trucco" +"<br>" +"<br>" +"🡪 " +"Barack Obama"+ "<br>"+"Obama annuncia che la missione di combattimento degli USA in Iraq è finita. Firma la legge Don't Ask, Don't Tell Repeal Act of 2010" +"<br>"+"<br>"+"🡪 " +"Nepal"+ "<br>"+"Dodicesima Convenzione Generale del Congresso a Kathmandu";
     }
     else if(currentYear == '2011' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Vaccino"+ "<br>"+"Uscita del film Contagion (Il film affronta il tema della diffusione di una malattia nuova e letale)"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
+        "🡪 " +"Vaccino"+ "<br>"+"Uscita del film Contagion (Il film affronta il tema della diffusione di una malattia nuova e letale)"+"<br>"+"<br>"+"🡪 " +"Barack Obama"+ "<br>"+"Obama annuncia la sua candidatura alle elezioni del 2012"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
     }
     else if(currentYear == '2012' ){
         var elem = document.getElementById("informazioni").innerHTML =
-         "";
+        "🡪 " +"Barack Obama"+ "<br>"+"Il 6 novembre 2012 vince le elezioni presidenziali imponendosi sul candidato repubblicano Mitt Romney";
     }
     else if(currentYear == '2013' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Vaccino"+ "<br>"+"Riportati numerosi casi umani di infezione da virus dell’influenza aviaria" +"<br>" + "<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce il film Into Darkness";
+        "🡪 " +"Vaccino"+ "<br>"+"Riportati numerosi casi umani di infezione da virus dell’influenza aviaria" +"<br>" + "<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce il film Into Darkness" + "<br>" + "<br>" +"🡪 " +"Barack Obama"+ "<br>"+"Obama diventa il primo presidente a chiamare la piena uguaglianza per gli americani gay";
     }
     else if(currentYear == '2014' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "";
+        "🡪 " +"Vaccino"+ "<br>"+"Inizio dell'epidemia di febbre emorragica di Ebola in Africa occidentale" +"<br>"+ "<br>"+"🡪 " +"Star Trek" +"<br>" + "Into Darkness nominata agli Oscar per i migliori effetti speciali" +"<br>" +"<br>" +  "🡪 " +"Barack Obama"+ "<br>"+"Passaggio verso una politica energetica più in sintonia con l'industria manifatturiera e il suo impatto sull'economia domestica" +"<br>"+ "<br>"+ "🡪 " +"Nepal"+ "<br>"+"Incidente stradale a Doti con 29 vittime";
     }
     else if(currentYear == '2015' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Star Trek"+ "<br>"+"Viene annunciata la serie Star Trek: Discovery" +"<br>" + "<br>" + "🡪 " +"Nepal"+ "<br>"+"Un violento terremoto causa molte vittime." +"<br>" + "B. D. Bhandary diventa presidentessa del Nepal";
+        "🡪 " +"Star Trek"+ "<br>"+"Viene annunciata la serie Star Trek: Discovery" +"<br>" + "<br>" +"🡪 " +"Barack Obama"+ "<br>"+"Obama impugna un disegno di legge che autorizzerebbe la pipeline"+"<br>"+"<br>"+ "🡪 " +"Nepal"+ "<br>"+"Un violento terremoto causa molte vittime." +"<br>" + "B. D. Bhandary diventa presidentessa del Nepal";
     }
 
     else if(currentYear == '2016' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Vaccino"+ "<br>"+"Viene messo in commercio Ervebo, un vaccino prodotto in occasione dell’epidemia di ebola del 2014-2016"+"<br>"+"<br>" +"🡪 " + "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "🡪 " + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
+        "🡪 " +"Vaccino"+ "<br>"+"Viene messo in commercio Ervebo, un vaccino prodotto in occasione dell’epidemia di ebola del 2014-2016"+"<br>"+"<br>" +"🡪 " + "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>"+ "🡪 " +"Barack Obama"+ "<br>"+"Per legge non si può ricandidare alle elezioni del 2016" +"<br>" + "<br>" + "🡪 " + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
     }
     else if(currentYear == '2017' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Vaccino"+ "<br>"+"Il primo ministro francese Edouard Philippeha afferma che a partire dal 2018 i vaccini raccomandati diverranno obbligatori"+"<br>"+"<br>" +"🡪 "+"Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+ "🡪 " +"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
+        "🡪 " +"Vaccino"+ "<br>"+"Il primo ministro francese Edouard Philippe afferma che a partire dal 2018 i vaccini raccomandati diverranno obbligatori"+"<br>"+"<br>"+ +"🡪 "+"Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+  "🡪 " +"Barack Obama"+ "<br>"+"Il 20 gennaio 2017, scadenza naturale del suo mandato, viene sostituito da Trump"+ "<br>" + "<br>"+ "🡪 " +"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
     }
     else if(currentYear == '2018' ){
-        var elem = document.getElementById("informazioni").innerHTML = "";
+        var elem = document.getElementById("informazioni").innerHTML =
+        "🡪 " +"Barack Obama"+ "<br>"+"Il 4 novembre ricorrono i 10 anni della storica elezione di Barack Obama a Presidente degli USA"+ "<br>" + "<br>"+  "🡪 " +"Nepal"+"<br>"+"La tredicenne Nirmala Pant viene violentata e uccisa a Bhimdatta, portando a proteste a livello nazionale";
     }
     else if(currentYear == '2019' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -272,7 +273,7 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2020' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Vaccino"+ "<br>"+"Autorizzazione all'uso d'emergenza di vaccini mRNA per la COVID-19"+"<br>"+"<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+"🡪 " +"Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
+        "🡪 " +"Vaccino"+ "<br>"+"Autorizzazione all'uso d'emergenza di vaccini mRNA per la Covid-19"+"<br>"+"<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+"🡪 " +"Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
     }
     else{
         elem = document.getElementById("informazioni").innerHTML = "";
