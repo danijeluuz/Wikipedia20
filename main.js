@@ -7,8 +7,10 @@ var   x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68,
 function articoli(el) {
   if (el.style.color === 'magenta') {
     el.style.color = 'white';  
+    console.log("A");
   }
   else (el.style.color = 'magenta')
+  console.log("B");
 }
 
 
@@ -222,11 +224,11 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2008' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Nepal"+ "<br>"+"Viene proclamata la Repubblica";
+        "🡪 " +"Vaccino"+ "<br>"+"Controveria relativa al vaccino anti polio"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene proclamata la Repubblica";
     }
     else if(currentYear == '2009' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
+        "🡪 " +"Vaccino"+ "<br>"+"Nel giugno 2009, l'OMS ha dichiarato pandemica l'influenza suina H1N1" +"<br>" + "<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce al cinema il prequel Star Trek";
     }
     else if(currentYear == '2010' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -234,7 +236,7 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2011' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
+        "🡪 " +"Vaccino"+ "<br>"+"Uscita del film Contagion (Il film affronta il tema della diffusione di una malattia nuova e letale)"+"<br>"+"<br>" +"🡪 " +"Nepal"+ "<br>"+"Viene eletto J. Khanal, nuovo primo ministro";
     }
     else if(currentYear == '2012' ){
         var elem = document.getElementById("informazioni").innerHTML =
@@ -255,22 +257,22 @@ function updateRadarData(year) {
 
     else if(currentYear == '2016' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " + "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "🡪 " + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
+        "🡪 " +"Vaccino"+ "<br>"+"Viene messo in commercio Ervebo, un vaccino prodotto in occasione dell’epidemia di ebola del 2014-2016"+"<br>"+"<br>" +"🡪 " + "Star Trek"+ "<br>"+"Cinquantenario della serie e uscita di Star Trek Beyond"  + "<br>" + "<br>" + "🡪 " + "Nepal" + "<br>"+ "Importanti accordi con la Cina"
     }
     else if(currentYear == '2017' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 "+"Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+ "🡪 " +"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
+        "🡪 " +"Vaccino"+ "<br>"+"Il primo ministro francese Edouard Philippeha afferma che a partire dal 2018 i vaccini raccomandati diverranno obbligatori"+"<br>"+"<br>" +"🡪 "+"Star Trek"+ "<br>"+"Esce su Netflix la serie tv Star Trek: Discovery"+"<br>"+"<br>"+ "🡪 " +"Nepal"+"<br>"+"Il volo 409 della Summit Air precipita a Lukla."+"<br>"+"La pallavolo è sport nazionale" ;
     }
     else if(currentYear == '2018' ){
         var elem = document.getElementById("informazioni").innerHTML = "";
     }
     else if(currentYear == '2019' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Nepal"+ "<br>"+"Viene lanciato NepaliSat-1, primo satellite nepalese";
+        "🡪 " +"Vaccino"+ "<br>"+"Svariati casi nel mondo di febbre gialla, febbre di lassa, MERS-CoV, vaiolo delle scimmie, ebola, listeriosi e altro"+ "<br>" + "<br>"+"🡪 " +"Nepal"+ "<br>"+"Viene lanciato NepaliSat-1, primo satellite nepalese";
     }
     else if(currentYear == '2020' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+ "Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
+        "🡪 " +"Vaccino"+ "<br>"+"Autorizzazione all'uso d'emergenza di vaccini mRNA per la COVID-19"+"<br>"+"<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esordio della serie tv Star Trek: Picard"+"<br>"+"<br>"+"🡪 " +"Nepal"+ "<br>"+"Lockdown nazionale da Covid-19";
     }
     else{
         elem = document.getElementById("informazioni").innerHTML = "";
