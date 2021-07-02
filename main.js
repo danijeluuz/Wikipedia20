@@ -244,7 +244,7 @@ function updateRadarData(year) {
     }
     else if(currentYear == '2013' ){
         var elem = document.getElementById("informazioni").innerHTML =
-        "🡪 " +"Star Trek"+ "<br>"+"Esce il film Into Darkness";
+        "🡪 " +"Vaccino"+ "<br>"+"Riportati numerosi casi umani di infezione da virus dell’influenza aviaria" +"<br>" + "<br>" +"🡪 " +"Star Trek"+ "<br>"+"Esce il film Into Darkness";
     }
     else if(currentYear == '2014' ){
         var elem = document.getElementById("informazioni").innerHTML =
