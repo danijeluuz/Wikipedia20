@@ -1,18 +1,14 @@
 var turns = 0;
-
 var   x = ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114]; 
-/* var x="0"; */
-
+/*     var x=0; */
 
 function articoli(el) {
   if (el.style.color === 'magenta') {
     el.style.color = 'white';  
-    console.log("A");
   }
-  else (el.style.color = 'magenta')
-  console.log("B");
-}
 
+  else (el.style.color = 'magenta')
+}
 
 am4core.ready(function() {
 
@@ -27,13 +23,11 @@ am4core.useTheme(am4themes_dark);
 // disclaimer: this data is not accuarate, don't use it for any puroposes
 // first temperature is average for 1973-1980 period
 
-console.log(x);
 
 var temperatures = {
     "": [
-        
-     /*    x, */
-        ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114],
+        x,
+/*      ["Vaccino", 0, 1, 12, 11, 46, 51, 19, 57, 44, 32, 43, 59, 131, 68, 68, 114], */
 /*      ["Guerre Stellari", 66, 118, 219, 466, 166, 192, 135, 135, 139, 109, 526, 437, 539, 183, 223, 254],
         ["Hamburger", 0, 30, 25, 28, 30, 15, 22, 45, 40, 15, 35, 14, 28, 31, 48, 39],
         ["Yoga", 70, 86, 76, 64, 40 , 80, 41, 36, 24, 155, 17, 15, 22, 17, 18, 17], */
@@ -51,13 +45,10 @@ var temperatures = {
 
 }
 
-
-
 var startYear = 2005;
 var endYear = 2020;
 var currentYear = 2021;
 var colorSet = new am4core.ColorSet();
-
 var chart = am4core.create("chartdiv", am4charts.RadarChart);
 
 chart.hiddenState.properties.opacity = 0;
@@ -212,7 +203,7 @@ function updateRadarData(year) {
 
     if(currentYear == '2005' ){
         var elem = document.getElementById("informazioni").innerHTML = 
-        "🡪 " +"Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" + "🡪 " +"Barack Obama"+"<br>" + "Diventa senatore degli Stati Uniti per l'Illinois" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Gyanendra licenza il governo nepalese"
+        "🡪 " +"Star Trek" +"<br>" + "Viene riconosciuto come voce di qualità (★)" +"<br>" +"<br>" + "🡪 " +"Barack Obama"+"<br>" + "Diventa senatore degli Stati Uniti per l'Illinois" +"<br>" +"<br>" +"🡪 " +"Nepal"+ "<br>"+"Il Primo ministro Gyanendra scioglie il governo"
     }
     else if(currentYear == '2006' ){
         var elem = document.getElementById("informazioni").innerHTML = 
