@@ -42,7 +42,6 @@ var temperatures = {
         ["Nepal", 56, 88, 119, 115, 109, 48, 42, 46, 37, 26, 102, 18, 29, 52, 53, 62],
 /*      ["Pasta", 19, 78, 362, 75, 152, 69, 86, 58, 77, 78, 105, 71, 57, 189, 217, 88],  */
     ]
-
 }
 
 var startYear = 2005;
@@ -66,7 +65,7 @@ yearLabel.horizontalCenter = "middle";
 yearLabel.verticalCenter = "middle";
 yearLabel.fill = am4core.color("#ccff00");
 yearLabel.fontSize =550;
-yearLabel.fillOpacity = 0.11;
+yearLabel.fillOpacity = 0.16;
 yearLabel.text = String(currentYear);
 
 // zoomout button
