@@ -213,15 +213,15 @@ button:hover{
 }
 
 .bottone1{
-    top: calc(100vh - 100px);
-    left: calc(100vw - 225px);
+    top: calc(100vh - 105px);
+    left: calc(100vw - 210px);
     position: fixed;
     z-index: 2;
 }
 
 .bottone2{
-    top: calc(100vh - 100px);
-    left: calc(100vw - 125px);
+    top: calc(100vh - 105px);
+    left: calc(100vw - 110px);
     position: fixed;
     z-index: 1;
 }
@@ -301,6 +301,36 @@ button:hover{
   visibility: visible;
 }
 
+
+.bottone6 .tooltiptext {
+    font-family: 'Archivo', sans-serif;
+    font-size: 4.8vw;
+    visibility: hidden;
+    background-color:none;
+    color:#ccff00;
+    background-color: black;
+    top: -1vh;
+    text-align: left;
+    left:150px;  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+.bottone6:hover .tooltiptext {
+    visibility: visible;
+}
+
+.bottone6{
+    top: calc(100vh - 105px);
+    right: calc(100vw - 110px);
+    position: fixed;
+    z-index: 1;
+}
+
+.bottone6:hover{
+    background-color: #ccff00;
+}
 .info{
     font-size: 1vw;
     line-height: 1.2;
